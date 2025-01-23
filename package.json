@@ -1,0 +1,27 @@
+{
+  "name": "scheet.dev",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Source code for the scheet.dev webpage",
+  "scripts": {
+    "start": "concurrently \"npm start --workspace frontend\"  \"npm start --workspace backend\"",
+    "test": "npm test  --workspace frontend",
+    "start:frontend": "npm start --workspace frontend",
+    "start:backend": "npm start --workspace backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cscheet2/scheet.dev.git"
+  },
+  "author": "Raegan Scheet",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/cscheet2/scheet.dev/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}
