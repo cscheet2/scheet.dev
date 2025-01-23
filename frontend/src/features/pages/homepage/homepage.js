@@ -2,6 +2,6 @@ import React from "react";
 
 export function HomePage() {
   return (
-    <div>haii :33 !!!</div>
+    <div className="underline">haii :33 !!!</div>
   );
 }
