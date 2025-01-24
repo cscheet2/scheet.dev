@@ -9,10 +9,10 @@ function NavButton(props) {
   const navigate = useNavigate();
   return (
     <button
-      className="bg-gray-500 py-800 px-800"
+      className="bg-gray-500 h-12"
       onClick={() => navigate(props.info.redirect)}
     >
-      {props.info.display}
+      <p className="mx-4">{props.info.display}</p>
     </button>
   );
 }
