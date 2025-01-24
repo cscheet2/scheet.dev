@@ -6,13 +6,14 @@ import "./index.css";
 
 import { store } from "./app/store.js";
 import { App } from "./app.js";
+import { NavBar } from "./features/navbar/navbar.js";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
         <div id="portrait">
-          <h1 className="text-3xl font-bold underline">haii</h1>
+          <NavBar/>
           <App/>
         </div>
       </Router>
