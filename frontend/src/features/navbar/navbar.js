@@ -9,7 +9,7 @@ function NavButton(props) {
   const navigate = useNavigate();
   return (
     <button
-      className="bg-gray-500 h-12"
+      className="bg-violet-800 h-12"
       onClick={() => navigate(props.info.redirect)}
     >
       <p className="mx-4">{props.info.display}</p>
@@ -26,7 +26,7 @@ NavButton.propTypes = {
 export function NavBar() {
   const navButtons = useSelector(getNavBarButtons);
   return (
-    <div className="max-w-full bg-gray-400">
+    <div className="max-w-full bg-purple-700">
       <div>
         {Object.keys(navButtons).map((key) => (
           <NavButton key={key} info={navButtons[key]}/>
