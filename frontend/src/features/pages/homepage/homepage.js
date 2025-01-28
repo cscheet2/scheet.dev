@@ -2,6 +2,8 @@ import React from "react";
 import Markdown from "react-markdown";
 
 import Raegan from "./../../../images/Raegan.png";
+import GitHubImage from "./../../../images/github-mark-white.png";
+import LinkedInImage from "./../../../images/In-White-26.png"
 
 import AboutMeText from "./../../../text/aboutme.json";
 
@@ -15,8 +17,12 @@ function Header() {
 
 function Myself() {
   return (
-    <div className="p-4 bg-slate-800 rounded-xl">
-      <img className="p-4" src={Raegan} alt="Scheet Dev"/>
+    <div className="p-8 bg-slate-800 rounded-xl">
+      <img className="rounded-xl" src={Raegan} alt="Scheet Dev"/>
+      <div className="pt-4 flex justify-evenly">
+        <button onClick={() => window.location.href = "https://github.com/cscheet2"}><img src={GitHubImage} className="w-10 h-10"/></button>
+        <button onClick={() => window.location.href = "https://www.linkedin.com/in/cameron-scheet/2"}><img src={LinkedInImage} className="w-10 h-10"/></button>
+      </div>
     </div>
   );
 }
@@ -41,7 +47,7 @@ export function HomePage() {
   return (
     <div>
       <Header/>
-      <div className="container grid grid-cols-2 space-x-16">
+      <div className="flex space-x-16">
         <AboutMe/>
         <Myself/>
       </div>
