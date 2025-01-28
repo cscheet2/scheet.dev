@@ -14,7 +14,7 @@ createRoot(document.getElementById("root")).render(
       <Router>
         <div id="portrait">
           <NavBar/>
-          <App/>
+          <div className="p-10"><App/></div>
         </div>
       </Router>
     </Provider>
