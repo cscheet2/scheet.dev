@@ -6,7 +6,11 @@ import Raegan from "./../../../images/Raegan.png";
 import AboutMeText from "./../../../text/aboutme.json";
 
 function Header() {
-  <div>scheet.dev</div>
+  return (
+    <div className="mb-8 p-4 bg-slate-800 rounded-xl text-center text-2xl">
+      scheet.dev
+    </div>
+  );
 }
 
 function Myself() {
@@ -35,9 +39,12 @@ function Highlights() {
 
 export function HomePage() {
   return (
-    <div className="container grid grid-cols-2 space-x-16">
-      <AboutMe/>
-      <Myself/>
+    <div>
+      <Header/>
+      <div className="container grid grid-cols-2 space-x-16">
+        <AboutMe/>
+        <Myself/>
+      </div>
     </div>
   );
 }
