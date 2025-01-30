@@ -4,7 +4,8 @@ const navbarSlice = createSlice({
   name: "navbar",
   initialState: {
     navButtons: [
-      { "display": 'Home', "redirect": "" },
+      { "display": "Home",   "redirect": "/"       },
+      { "display": "Resume", "redirect": "/resume" },
     ],
   },
   reducers: {

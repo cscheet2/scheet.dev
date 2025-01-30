@@ -5,7 +5,7 @@ import Raegan from "./../../../images/Raegan.png";
 import GitHubImage from "./../../../images/github-mark-white.png";
 import LinkedInImage from "./../../../images/In-White-26.png"
 
-import AboutMeText from "./../../../text/aboutme.json";
+import AboutMeText from "./../../../documents/text/aboutme.json";
 
 function Header() {
   return (
@@ -21,7 +21,7 @@ function Myself() {
       <img className="rounded-xl" src={Raegan} alt="Scheet Dev"/>
       <div className="pt-4 flex justify-evenly">
         <button onClick={() => window.location.href = "https://github.com/cscheet2"}><img src={GitHubImage} className="w-10 h-10"/></button>
-        <button onClick={() => window.location.href = "https://www.linkedin.com/in/cameron-scheet/2"}><img src={LinkedInImage} className="w-10 h-10"/></button>
+        <button onClick={() => window.location.href = "https://www.linkedin.com/in/cameron-scheet/"}><img src={LinkedInImage} className="w-10 h-10"/></button>
       </div>
     </div>
   );
