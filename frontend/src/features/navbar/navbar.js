@@ -1,9 +1,7 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 
-import { getNavBarButtons } from "./navbarSlice.js";
 
 function NavButton(props) {
   const navigate = useNavigate();
@@ -24,7 +22,10 @@ NavButton.propTypes = {
 };
 
 export function NavBar() {
-  const navButtons = useSelector(getNavBarButtons);
+  const navButtons = [
+    { "display": "Home",   "redirect": "/"       },
+    { "display": "Resume", "redirect": "/resume" },
+  ];
   return (
     <div className="max-w-full bg-violet-800">
       <div className="flex justify-center text-lg">
