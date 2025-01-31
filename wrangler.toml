@@ -1,0 +1,4 @@
+name = "scheet-dev"
+compatibility_flags = [ "nodejs_compat" ]
+compatibility_date = "2025-1-31"
+assets = { directory = "build" }
