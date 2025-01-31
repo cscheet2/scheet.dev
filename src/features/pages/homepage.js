@@ -1,11 +1,12 @@
 import React from "react";
 import Markdown from "react-markdown";
 
-import Raegan from "./../../../images/Raegan.png";
-import GitHubImage from "./../../../images/github-mark-white.png";
-import LinkedInImage from "./../../../images/In-White-26.png"
+import Raegan from "./../../images/Raegan.png";
+import GitHubImage from "./../../images/github-mark-white.png";
+import LinkedInImage from "./../../images/In-White-26.png"
 
-import AboutMeText from "./../../../documents/text/aboutme.json";
+import AboutMeText from "./../../documents/text/aboutme.json";
+
 
 function Header() {
   return (

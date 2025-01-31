@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { HomePage } from "./features/pages/homepage/homepage.js";
-import { ResumePage } from "./features/pages/resume/resume.js";
+import { HomePage } from "./features/pages/homepage.js";
+import { ResumePage } from "./features/pages/resume.js";
 import { Layout } from "./layout.js";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Routes>
@@ -16,5 +16,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
