@@ -19,7 +19,7 @@ function Header() {
 function Myself() {
   return (
     <div className="p-8 bg-slate-800 rounded-xl">
-      <img className="rounded-xl" src={Raegan} alt="Scheet Dev"/>
+      <img className="rounded-xl mx-auto" src={Raegan} alt="Scheet Dev"/>
       <div className="pt-4 flex justify-evenly">
         <button onClick={() => window.location.href = "https://github.com/cscheet2"}><img src={GitHubImage} className="w-10 h-10"/></button>
         <button onClick={() => window.location.href = "https://www.linkedin.com/in/cameron-scheet/"}><img src={LinkedInImage} className="w-10 h-10"/></button>
@@ -39,17 +39,17 @@ function AboutMe() {
 function Highlights() {
   return (
     <div>
-
+      
     </div>
   );
 }
 
 export function HomePage() {
   return (
-    <div>
+    <div className="p-4 max-w-7xl mx-auto">
       <Header/>
-      <div className="flex space-x-16">
-        <AboutMe/>
+      <div className="flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0">
+        <AboutMe className=""/>
         <Myself/>
       </div>
     </div>
