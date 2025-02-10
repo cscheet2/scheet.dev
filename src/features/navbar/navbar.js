@@ -21,7 +21,7 @@ NavButton.propTypes = {
   }).isRequired,
 };
 
-export function NavBar() {
+export default function NavBar() {
   const navButtons = [
     { "display": "Home",     "redirect": "/"         },
     { "display": "Resume",   "redirect": "/resume"   },

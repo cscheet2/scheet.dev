@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { HomePage } from "./features/pages/homepage.js";
-import { ResumePage } from "./features/pages/resume.js";
-import { ProjectsPage } from "./features/pages/projects.js";
-import { Layout } from "./layout.js";
+import HomePage from "./features/pages/homepage.js";
+import ResumePage from "./features/pages/resume.js";
+import ProjectsPage from "./features/pages/projects.js";
+import Layout from "./layout.js";
 
 export default function App() {
   return (
