@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Markdown from "react-markdown";
 
 import Raegan from "./../../images/Raegan.png";
 import GitHubImage from "./../../images/github-mark-white.png";
 import LinkedInImage from "./../../images/In-White-26.png"
 
-import AboutMeText from "./../../documents/text/aboutme.json";
+import AboutMeText from "./../../documents/text/aboutme.md";
 
 
 function Header() {
@@ -29,9 +29,11 @@ function Myself({ className }) {
 }
 
 function AboutMe({ className }) {
+  const [about_me_text, set_about_me_text] = useState("");
+  useEffect(() => { fetch(AboutMeText).then(response => response.text()).then(text => set_about_me_text(text)); }, []);
   return (
     <div className={`p-8 bg-slate-800 rounded-xl object ${className}`}>
-      <Markdown>{AboutMeText.text}</Markdown>
+      <Markdown>{about_me_text}</Markdown>
     </div>
   ); 
 }
