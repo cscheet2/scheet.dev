@@ -23,8 +23,9 @@ NavButton.propTypes = {
 
 export function NavBar() {
   const navButtons = [
-    { "display": "Home",   "redirect": "/"       },
-    { "display": "Resume", "redirect": "/resume" },
+    { "display": "Home",     "redirect": "/"         },
+    { "display": "Resume",   "redirect": "/resume"   },
+    { "display": "Projects", "redirect": "/projects" },
   ];
   return (
     <div className="max-w-full bg-violet-800">

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.53131b22.css",
-    "main.js": "/static/js/main.5bb4ad74.js",
+    "main.css": "/static/css/main.986c1c39.css",
+    "main.js": "/static/js/main.490c9f84.js",
     "static/media/Raegan.png": "/static/media/Raegan.cbe54ecade38318253fd.png",
     "static/media/Resume.pdf": "/static/media/Resume.eb09eac52fa947099460.pdf",
     "static/media/rubik-latin-400-italic.woff": "/static/media/rubik-latin-400-italic.ce3ca923c5955862da3f.woff",
@@ -29,11 +29,11 @@
     "static/media/rubik-hebrew-400-italic.woff2": "/static/media/rubik-hebrew-400-italic.485dcc98976a3936672d.woff2",
     "static/media/rubik-hebrew-400-normal.woff2": "/static/media/rubik-hebrew-400-normal.9f12218709f0b72dbf18.woff2",
     "index.html": "/index.html",
-    "main.53131b22.css.map": "/static/css/main.53131b22.css.map",
-    "main.5bb4ad74.js.map": "/static/js/main.5bb4ad74.js.map"
+    "main.986c1c39.css.map": "/static/css/main.986c1c39.css.map",
+    "main.490c9f84.js.map": "/static/js/main.490c9f84.js.map"
   },
   "entrypoints": [
-    "static/css/main.53131b22.css",
-    "static/js/main.5bb4ad74.js"
+    "static/css/main.986c1c39.css",
+    "static/js/main.490c9f84.js"
   ]
 }

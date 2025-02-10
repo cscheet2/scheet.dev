@@ -16,10 +16,10 @@ function Header() {
   );
 }
 
-function Myself() {
+function Myself({ className }) {
   return (
-    <div className="p-8 bg-slate-800 rounded-xl">
-      <img className="rounded-xl mx-auto" src={Raegan} alt="Scheet Dev"/>
+    <div className={`p-8 bg-slate-800 rounded-xl ${className}`}>
+      <img className="rounded-xl" src={Raegan} alt="Scheet Dev"/>
       <div className="pt-4 flex justify-evenly">
         <button onClick={() => window.location.href = "https://github.com/cscheet2"}><img src={GitHubImage} className="w-10 h-10"/></button>
         <button onClick={() => window.location.href = "https://www.linkedin.com/in/cameron-scheet/"}><img src={LinkedInImage} className="w-10 h-10"/></button>
@@ -28,9 +28,9 @@ function Myself() {
   );
 }
 
-function AboutMe() {
+function AboutMe({ className }) {
   return (
-    <div className="p-8 bg-slate-800 rounded-xl">
+    <div className={`p-8 bg-slate-800 rounded-xl object ${className}`}>
       <Markdown>{AboutMeText.text}</Markdown>
     </div>
   ); 
@@ -39,18 +39,18 @@ function AboutMe() {
 function Highlights() {
   return (
     <div>
-      
+
     </div>
   );
 }
 
 export function HomePage() {
   return (
-    <div className="p-4 max-w-7xl mx-auto">
+    <div>
       <Header/>
-      <div className="flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0">
-        <AboutMe className=""/>
-        <Myself/>
+      <div className="flex space-x-16">
+        <AboutMe className="flex-grow basis-0"/>
+        <Myself className="flex-shrink basis-0 min-w-[200px] max-h-fit max-h-[200px]"/>
       </div>
     </div>
   );
