@@ -48,7 +48,7 @@ export function HomePage() {
   return (
     <div>
       <Header/>
-      <div className="flex space-x-16">
+      <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16">
         <AboutMe className="flex-grow basis-0"/>
         <Myself className="flex-shrink basis-0 min-w-[200px] max-h-fit max-h-[200px]"/>
       </div>
