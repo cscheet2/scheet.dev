@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Markdown from "react-markdown";
+import ReactMarkdown from "react-markdown";
 
 import Raegan from "./../../images/Raegan.png";
 import GitHubImage from "./../../images/github-mark-white.png";
@@ -32,8 +32,8 @@ function AboutMe({ className }) {
   const [about_me_text, set_about_me_text] = useState("");
   useEffect(() => { fetch(AboutMeText).then(response => response.text()).then(text => set_about_me_text(text)); }, []);
   return (
-    <div className={`p-8 bg-slate-800 rounded-xl object ${className}`}>
-      <Markdown>{about_me_text}</Markdown>
+    <div className={`p-8 bg-slate-800 rounded-xl object prose ${className}`}>
+      <ReactMarkdown className="text-white">{about_me_text}</ReactMarkdown>
     </div>
   ); 
 }
