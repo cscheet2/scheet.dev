@@ -52,7 +52,7 @@ export default function HomePage() {
   return (
     <div>
       <Header/>
-      <div className="flex flex-col lg:flex-row justify-center gap-8 h-[calc(100svh-16em)]">
+      <div className="flex flex-col lg:flex-row justify-center gap-8 lg:h-[calc(100svh-16em)]">
         <AboutMe className=""/>
         <Myself className=""/>
       </div>
