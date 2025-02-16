@@ -10,7 +10,7 @@ import AboutMeText from "./../../documents/text/aboutme.md";
 
 function Header() {
   return (
-    <div className="mb-8 p-4 bg-slate-800 rounded-xl text-center">
+    <div className="mb-8 p-4 rounded-xl text-center">
       <h1 className="text-6xl font-bold bg-gradient-to-r from-violet-300 via-purple-600 to-violet-900 text-transparent bg-clip-text bg-300% animate-gradient">
         scheet.dev
         </h1>
@@ -20,8 +20,8 @@ function Header() {
 
 function Myself({ className }) {
   return (
-    <div className={`p-8 bg-slate-800 rounded-xl ${className}`}>
-        <img className="rounded-xl object-contain" src={Raegan} alt="Scheet Dev"/>
+    <div className={`p-8 pb-[72px] bg-slate-800 rounded-xl flex-0 w-auto h-full ${className}`}>
+        <img className="rounded-xl w-auto h-full" src={Raegan} alt="Scheet Dev"/>
       <div className="pt-4 flex justify-evenly">
         <button onClick={() => window.location.href = "https://github.com/cscheet2"}><img src={GitHubImage} className="w-10 h-10"/></button>
         <button onClick={() => window.location.href = "https://www.linkedin.com/in/cameron-scheet/"}><img src={LinkedInImage} className="w-10 h-10"/></button>
@@ -52,8 +52,8 @@ export default function HomePage() {
   return (
     <div>
       <Header/>
-      <div className="flex flex-col lg:flex-row gap-8 justify-center">
-        <AboutMe className="h-fit"/>
+      <div className="flex flex-col lg:flex-row justify-center gap-8 h-[calc(100svh-16em)]">
+        <AboutMe className=""/>
         <Myself className=""/>
       </div>
     </div>
