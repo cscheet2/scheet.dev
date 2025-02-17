@@ -99,7 +99,7 @@ function Experience() {
         <p><i>Constraint Systems Laboratory, UNL</i></p>
         <div className="my-2"/>
         <Bullets>
-          <p>Designed and built SATVIZ, a web-based interactive visualization tool for a SAT Solver satviz.unl.edu</p>
+          <p>Designed and built SATVIZ, a web-based interactive visualization tool for a SAT Solver <a href="https://satviz.unl.edu/">satviz.unl.edu</a></p>
           <p>Desgined a MySQL database; used JavaScript, D3.js, and PHP</p>
         </Bullets>
       </SubsectionTemplate>
@@ -170,7 +170,7 @@ function PersonalProjects() {
       <SubsectionTemplate>
         <LRAlign>
           <p><strong>Perlin Color</strong></p>
-          <p>https://github.com/cscheet2/Perlin-Color</p>
+          <p><a href="https://github.com/cscheet2/Perlin-Color">github.com/cscheet2/Perlin-Color</a></p>
         </LRAlign>
         <div className="my-2"/>
         <Bullets>
@@ -181,7 +181,7 @@ function PersonalProjects() {
       <SubsectionTemplate>
         <LRAlign>
           <p><strong>scheet.dev</strong></p>
-          <p>https://github.com/cscheet2/scheet.dev</p>
+          <p><a href="https://github.com/cscheet2/scheet.dev">github.com/cscheet2/scheet.dev</a></p>
         </LRAlign>
         <div className="my-2"/>
         <Bullets>
