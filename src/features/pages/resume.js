@@ -15,6 +15,23 @@ function LRAlign(props) {
 }
 
 /**
+ * Changes text depending on whether or not
+ * the text can fit
+ * 
+ * First child is larger text argument
+ * Second argument is smaller text argument
+ */
+function TextScreenFit(props) {
+  const children = React.Children.toArray(props.children);
+  return (
+    <div>
+      <div className="hidden sm:block">{children[0]}</div>
+      <div className="block sm:hidden">{children[0]}</div>
+    </div>
+  );
+}
+
+/**
  * Section template for each tab
  */
 function SectionTemplate(props) {
@@ -65,7 +82,10 @@ function Education() {
           <p>Lincoln, NE</p>
         </LRAlign>
         <LRAlign>
-        <p>Bachelor of Science in Software Engineering</p>
+        <TextScreenFit>
+          <p>Bachelor of Science in Software Engineering</p>
+          <p>BS Software Engineering</p>
+        </TextScreenFit>
         <p>Aug 2023-Present</p>
         </LRAlign>
         <p>Minor in Mathematics</p>
