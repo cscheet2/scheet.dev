@@ -31,3 +31,9 @@ code {
     background-position: 0% 50%;
   }
 }
+
+@layer base {
+  body {
+    @apply text-slate-50;
+  }
+}

@@ -6,14 +6,13 @@ import GitHubImage from "./../../images/github-mark-white.png";
 import LinkedInImage from "./../../images/In-White-26.png"
 
 import AboutMeText from "./../../documents/text/aboutme.md";
-``
 
 function Header() {
   return (
     <div className="mb-8 p-4 rounded-xl text-center">
       <h1 className="text-6xl font-bold bg-gradient-to-r from-violet-300 via-purple-600 to-violet-900 text-transparent bg-clip-text bg-300% animate-gradient">
         scheet.dev
-        </h1>
+      </h1>
     </div>
   );
 }
