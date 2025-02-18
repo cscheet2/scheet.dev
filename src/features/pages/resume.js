@@ -36,13 +36,11 @@ function TextScreenFit(props) {
  */
 function SectionTemplate(props) {
   return (
-    <div className="relative">
-      <h1 className="text-5xl mb-3 ml-2">{props.section}</h1>
-      <div className="flex">
-        <div className="bg-violet-800 rounded-xl w-4 min-h-full ml-3"></div>
-        <div className="mx-6 p-8 bg-slate-800 rounded-xl w-full flex flex-col gap-y-8">
-          {props.children}
-        </div>
+    <div className="flex">
+      <div className="bg-violet-800 rounded-xl w-3 self-stretch ml-3"/>
+      <div className="mx-6 flex-1">
+        <h1 className="text-5xl mb-3">{props.section}</h1>
+        <div className="p-8 bg-slate-800 rounded-xl w-full flex flex-col gap-y-8">{props.children}</div>
       </div>
     </div>
   );
@@ -252,7 +250,7 @@ function TechnicalSkills() {
 
 export default function ResumePage() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-20">
       <Education/>
       <Experience/>
       <Involvement/>
