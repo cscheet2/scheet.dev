@@ -39,14 +39,6 @@ function AboutMe({ className }) {
   ); 
 }
 
-function Highlights() {
-  return (
-    <div>
-
-    </div>
-  );
-}
-
 export default function HomePage() {
   return (
     <div>
