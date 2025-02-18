@@ -8,7 +8,7 @@ The website is still in development, however I like open source code so I have m
 
 Commands to build the webpage are
 -  `npm run start` for local testing
--  `npm run deploy:worker`: for website deployment
+-  `npm run deploy:worker` for website deployment
 
 ### wrangler.toml
 
