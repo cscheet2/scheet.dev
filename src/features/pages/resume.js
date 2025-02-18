@@ -267,7 +267,7 @@ function TechnicalSkills() {
 
 export default function ResumePage() {
   return (
-    <div className="flex flex-col gap-20">
+    <div className="flex flex-col gap-20 mt-8">
       <Education/>
       <Experience/>
       <Involvement/>
