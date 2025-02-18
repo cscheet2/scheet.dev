@@ -26,7 +26,7 @@ function TextScreenFit(props) {
   return (
     <div>
       <div className="hidden sm:block">{children[0]}</div>
-      <div className="block sm:hidden">{children[0]}</div>
+      <div className="block sm:hidden">{children[1]}</div>
     </div>
   );
 }
@@ -77,16 +77,18 @@ function Education() {
       <SubsectionTemplate>
         <LRAlign>
           <p><strong>University of Nebraska-Lincoln</strong></p>
-          <p>Lincoln, NE</p>
+          <TextScreenFit><p>Lincoln, NE</p><p></p></TextScreenFit>
         </LRAlign>
         <LRAlign>
-        <TextScreenFit>
-          <p>Bachelor of Science in Software Engineering</p>
-          <p>BS Software Engineering</p>
-        </TextScreenFit>
-        <p>Aug 2023-Present</p>
+          <div>
+            <TextScreenFit>
+              <p>Bachelor of Science in Software Engineering</p>
+              <p>BS Software Engineering</p>
+            </TextScreenFit>
+            <p>Minor in Mathematics</p>
+          </div>
+          <p>Aug 2023-Present</p>
         </LRAlign>
-        <p>Minor in Mathematics</p>
       </SubsectionTemplate>
     </SectionTemplate>
   );
@@ -97,11 +99,13 @@ function Experience() {
     <SectionTemplate section="Experience">
       <SubsectionTemplate>
         <LRAlign>
-          <p><strong>Undergraduate Teaching Assistant</strong></p>
+          <div>
+            <p><strong>Undergraduate Teaching Assistant</strong></p>
+            <p>Discrete Mathematics (Honors)</p>
+            <p><i>School of Computing, UNL</i></p>
+          </div>
           <p>Jan 2025-Present</p>
         </LRAlign>
-        <p>Discrete Mathematics (Honors)</p>
-        <p><i>School of Computing, UNL</i></p>
         <div className="my-2"/>
         <Bullets>
           <p>Designed rigorous and impactful assignments to enhance student learning</p>
@@ -111,10 +115,12 @@ function Experience() {
       </SubsectionTemplate>
       <SubsectionTemplate>
         <LRAlign>
-          <p><strong>Undergraduate Research Assistant</strong></p>
+          <div>
+            <p><strong>Undergraduate Research Assistant</strong></p>
+            <p><i>Constraint Systems Laboratory, UNL</i></p>
+          </div>
           <p>Aug 2024-Present</p>
         </LRAlign>
-        <p><i>Constraint Systems Laboratory, UNL</i></p>
         <div className="my-2"/>
         <Bullets>
           <p>Designed and built SATVIZ, a web-based interactive visualization tool for a SAT Solver <a href="https://satviz.unl.edu/">satviz.unl.edu</a></p>
@@ -123,11 +129,13 @@ function Experience() {
       </SubsectionTemplate>
       <SubsectionTemplate>
         <LRAlign>
-          <p><strong>Learning Assistant</strong></p>
+          <div>
+            <p><strong>Learning Assistant</strong></p>
+            <p>Computer Science I & II</p>
+            <p><i>School of Computing, UNL</i></p>
+          </div>
           <p>Jan 2024-Present</p>
         </LRAlign>
-        <p>Computer Science I & II</p>
-        <p><i>School of Computing, UNL</i></p>
         <div className="my-2"/>
         <Bullets>
           <p>Mentored students over intro computer science topics through collaborative teaching</p>
@@ -144,10 +152,12 @@ function Involvement() {
     <SectionTemplate section="Involvement">
       <SubsectionTemplate>
         <LRAlign>
-          <p><strong>Lunabotics, Aerospace Club</strong></p>
+          <div>
+            <p><strong>Lunabotics, Aerospace Club</strong></p>
+            <p><i>College of Engineering, UNL</i></p>
+          </div>
           <p>Aug 2024-Present</p>
         </LRAlign>
-        <p><i>College of Engineering, UNL</i></p>
         <div className="my-2"/>
         <Bullets>
           <p>Designed and programmed an excavation rover for NASA’s Lunabotics Mining Competition</p>
@@ -156,10 +166,12 @@ function Involvement() {
       </SubsectionTemplate>
       <SubsectionTemplate>
         <LRAlign>
-          <p><strong>Operating Systems and Open-Source Group (OS2G)</strong></p>
+          <div>
+            <p><strong>Operating Systems and Open-Source Group (OS2G)</strong></p>
+            <p><i>School of Computing, UNL</i></p>
+          </div>
           <p>Aug 2023-Present</p>
         </LRAlign>
-        <p><i>School of Computing, UNL</i></p>
         <div className="my-2"/>
         <Bullets>
           <p>Collaborate with peers to facilitate regular technical presentations delivered by club members and faculty</p>
@@ -168,10 +180,12 @@ function Involvement() {
       </SubsectionTemplate>
       <SubsectionTemplate>
         <LRAlign>
-          <p><strong>Troop 308 Eagle Scout</strong></p>
+          <div>
+            <p><strong>Troop 308 Eagle Scout</strong></p>
+            <p><i>Scouting America</i></p>
+          </div>
           <p>Jan 2011-Nov 2022</p>
         </LRAlign>
-        <p><i>Scouting America</i></p>
         <div className="my-2"/>
         <Bullets>
           <p>Elected as troop leader, responsible for coordinating weekly meetings and monthly camp-outs</p>
@@ -222,7 +236,10 @@ function Honors() {
             <p>Jan 2024–Present</p>
           </LRAlign>
           <LRAlign>
-            <p>Undergraduate Creative Activities and Research Experience (UCARE), $3,600</p>
+            <TextScreenFit>
+              <p>Undergraduate Creative Activities and Research Experience (UCARE), $3,600</p>
+              <p>UCARE, $3,600</p>
+            </TextScreenFit>
             <p>Aug 2024–Present</p>
           </LRAlign>
           <LRAlign>
