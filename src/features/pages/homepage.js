@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from "react";
-import ReactMarkdown from "react-markdown";
+import React from "react";
 
 import Raegan from "./../../images/Raegan.png";
 import GitHubImage from "./../../images/github-mark-white.png";
 import LinkedInImage from "./../../images/In-White-26.png"
 import InstagramImage from "./../../images/instagram-social-image.png";
 import EmailImage from "./../../images/email-social-image.png";
-
-import AboutMeText from "./../../documents/text/aboutme.md";
 
 function Header() {
   return (
@@ -35,15 +32,6 @@ function AboutMe({ className }) {
 
 function Myself({ className }) {
   return (
-    // <div className={`flex flex-col justify-between items-center p-4 bg-slate-800 rounded-xl h-full ${className}`}>
-    //   <div className="flex justify-center">
-    //     <img className="rounded-xl w-auto max-h-[500px] object-cover mx-auto" src={Raegan} alt="Scheet Dev"/>
-    //   </div>
-    //   <div className="pt-4 flex justify-evenly w-full">
-    //     <button onClick={() => window.location.href = "https://github.com/cscheet2"}><img src={GitHubImage} className="w-10 h-10"/></button>
-    //     <button onClick={() => window.location.href = "https://www.linkedin.com/in/cameron-scheet/"}><img src={LinkedInImage} className="w-10 h-10"/></button>
-    //   </div>
-    // </div>
     <div className={`p-8 bg-slate-800 rounded-xl ${className}`}>
       <img className="rounded-xl w-auto max-h-[400px] object-cover mx-auto" src={Raegan} alt="Scheet Dev"/>
     </div>
