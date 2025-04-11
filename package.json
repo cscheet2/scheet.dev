@@ -32,7 +32,7 @@
     "react-scripts": "5.0.1",
     "reactjs-popup": "^2.0.6",
     "web-vitals": "^2.1.4",
-    "wrangler": "^3.107.2"
+    "wrangler": "^4.10.0"
   },
   "browserslist": {
     "production": [
